@@ -9,7 +9,7 @@ public class Roach_Population {
 		pop = 10;
 		gang = "Ewwww";
 		breed = pop * pop;
-		spray = pop * 0.10;
+		spray = breed - (breed * 0.20);
 	}
 	public Roach_Population (int population, String gangs, int breeds, double sprays) {
 		population = pop;
@@ -43,7 +43,7 @@ public class Roach_Population {
 	}
 	public String toString() {
 		return ("The name of the roach population is: " + gang + ". The initial population is: " + pop + ". \n" + 
-	"The population squared is:" + breed + ". /n" + " The total population of roaches after being sprayed is: " + spray);
+	"The population squared is:" + breed + "." + " The total population of roaches after being sprayed is: " + spray);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
